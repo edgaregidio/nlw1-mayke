@@ -88,3 +88,22 @@ form label {
 form .field-group .field + .field {
   margin-left: 24px;
 }
+
+form button {
+  width: 260px;
+  height: 56px;
+
+  background: var(--primary-color);
+  border: 0;
+  border-radius: 6px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 40px;
+  transition: background .4s;
+}
+
+form button:hover {
+  background: #2fb86e;
+}
