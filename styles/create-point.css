@@ -108,7 +108,7 @@ form button:hover {
   background: #2fb86e;
 }
 
-.itens-grid {
+.items-grid {
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr;
@@ -117,7 +117,7 @@ form button:hover {
 
 }
 
-.itens-grid li{
+.items-grid li{
   list-style: none;
   border: 2px solid #f5f5f5;
   border-radius: 8px;
@@ -132,7 +132,7 @@ form button:hover {
   cursor: pointer;
 }
 
-.itens-grid li span{
+.items-grid li span{
   margin-top: 12px;
   flex: 1;
   display: flex;
@@ -141,7 +141,12 @@ form button:hover {
 }
 
 
-.itens-grid li.selected {
+.items-grid li.selected {
   background: #e1faec;
   border: 2px solid #34cb79;
+}
+
+.items-grid img,
+.items-grid span {
+  pointer-events: none;
 }
