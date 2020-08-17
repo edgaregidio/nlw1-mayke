@@ -40,6 +40,3 @@ function getCities(event) {
 document
   .querySelector('select[name=uf]')
   .addEventListener("change", getCities)
-
-
-  // https://servicodados.ibge.gov.br/api/v1/localidades/estados/33/municipios
