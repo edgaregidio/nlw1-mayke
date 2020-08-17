@@ -14,6 +14,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/modal.css">
 
   <link rel="stylesheet" href="styles/responsive.css">
 </head>
@@ -36,7 +37,7 @@
       <main>
         <h1>Seu marketplace de coleta de resíduos</h1>
         <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-        <a href="" >
+        <a href="#" >
           <span>
             <i class="fas fa-search"></i>
           </span>
@@ -47,7 +48,26 @@
     </div>
   </div>
 
-  
+
+  <div id="modal" class="hide" >
+    <div class="content">
+      <div class="header">
+        <h1>Pontos de coleta</h1>
+        <a href="#"><i class="fas fa-times"></i></a>
+      </div>
+      <form action="">
+        <label for="search">Cidade</label>
+        <div class="search field">
+          <input type="text" name="search" placeholder="Pesquise por Cidade">
+          <button>
+            <i class="fas fa-search" ></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
 
 </body>
 
