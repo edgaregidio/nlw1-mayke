@@ -1,0 +1,23 @@
+{
+  "name": "nlw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgaregidio/nlw1-mayke.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgaregidio/nlw1-mayke/issues"
+  },
+  "homepage": "https://github.com/edgaregidio/nlw1-mayke#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
