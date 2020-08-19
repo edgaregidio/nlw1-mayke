@@ -1,57 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
+{% extends "layout.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ecoleta</title>
+{% set pageId = "page-home" %}
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-  
-  <!-- Icones -->
-  <script src="https://kit.fontawesome.com/898bd1013b.js" crossorigin="anonymous"></script>
+<title>Ecoleta</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/home.css">
-  <link rel="stylesheet" href="styles/modal.css">
+{% block styles %}
+<!-- CSS -->
+<link rel="stylesheet" href="styles/home.css">
+<link rel="stylesheet" href="styles/modal.css">
+{% endblock styles %}
 
-  <link rel="stylesheet" href="styles/responsive.css">
-</head>
 
-<body>
 
-  <div id="page-home">
-    <div class="content">
+{% block content %}
+<div class="content">
 
-      <header>
-        <img src="assets/logo.svg" alt="Logomarca">
-        <a href="/create-point">
-          <span>
-            <i class="fas fa-sign-in-alt"></i>
-          </span>
-          Cadastre um ponto de coleta
-        </a>
-      </header>
+  <header>
+    <img src="assets/logo.svg" alt="Logomarca">
+    <a href="/create-point">
+      <span>
+        <i class="fas fa-sign-in-alt"></i>
+      </span>
+      Cadastre um ponto de coleta
+    </a>
+  </header>
+  <main>
+    <h1>Seu marketplace de coleta de resíduos</h1>
+    <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
+    <a href="#">
+      <span>
+        <i class="fas fa-search"></i>
+      </span>
+      <strong>Presquisar um ponto de coleta</strong>
+    </a>
+  </main>
+</div>
+{% endblock content %}
 
-      <main>
-        <h1>Seu marketplace de coleta de resíduos</h1>
-        <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
-        <a href="#" >
-          <span>
-            <i class="fas fa-search"></i>
-          </span>
-          <strong>Presquisar um ponto de coleta</strong>
-        </a>
-      </main>  
-  
-    </div>
-  </div>
+{% block modal %}
+{% include "partials/modal.html" %}
+{% endblock modal %}
 
-  {% include 'partials/modal.html' %}
 
-  <script src="js/index.js"></script>
-
-</body>
-
-</html>
+{% block scripts %}
+<script src="js/index.js"></script>
+{% endblock scripts %}
