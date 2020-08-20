@@ -18,8 +18,17 @@ nunjucks.configure('src/views', {
 server.get("/", (req, res) => {
   return res.render('index.html', { title: "Seu marketplace de coleta de resíduos" })
 })
+
+
+
 server.get("/create-point", (req, res) => {
+
+  console.log(req.query)
   return res.render('create-point.html')
+})
+
+server.post('/savepoint', (req, res) => {
+  return res.send('ok')
 })
 
 server.get("/search", (req, res) => {

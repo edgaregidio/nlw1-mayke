@@ -43,7 +43,7 @@ document
   .addEventListener("change", getCities)
 
 // ITENS DE COLETA
-// pegar todos os li's
+// Pegar todos os li's
 
 const itemsToCollect = document.querySelectorAll(".items-grid li")
 
@@ -62,25 +62,26 @@ function hangleSlectedItem(event)  {
   itemli.classList.toggle("selected")
 
   const itemId = itemli.dataset.id
-  
+
+  console.log(itemId)
   
   // Verificar se existem itens selecionados
-  // se SIM, pegar itens selecionados
+  // Se SIM, pegar itens selecionados
   const alreadySelected = selectedItems.findIndex(item => {
     const itemFound = item == itemId
     return itemFound
   })
 
-  // se Ja estiver selecionado, tirar da seleção
+  // Se Ja estiver selecionado, tirar da seleção
   if(alreadySelected >= 0) {
-    //tirar da seleção
+    // Tirar da seleção
     const filteredItems = selectedItems.filter(item => {
       const itemIsDifferent = item != itemId
       return itemIsDifferent
     })
     selectedItems = filteredItems
   } else {
-    // se NÃO tiver selecionado, adicionar a seleção
+    // Se NÃO tiver selecionado, adicionar a seleção
     selectedItems.push(itemId)
   }
   console.log(selectedItems)
